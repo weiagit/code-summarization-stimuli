@@ -1,7 +1,0 @@
-(1) **Code Comment Summary for `executeToolCall`:**
-
-The `executeToolCall` method handles the execution of tool calls specified in an `AssistantMessage`. It iterates over each tool call, resolving the appropriate `ToolCallback`. The method utilizes an observation mechanism to execute the tool call, capturing the result or any exceptions. Tool response messages are built for each call, and the method returns an `InternalToolExecutionResult` containing these responses and a flag indicating if the results should be returned directly.
-
-(2) **Bug Identification:**
-
-- no
