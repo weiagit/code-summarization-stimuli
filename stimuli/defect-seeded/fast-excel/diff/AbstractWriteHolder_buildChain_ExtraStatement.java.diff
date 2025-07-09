@@ -1,3 +1,0 @@
-449a450,451
->                     ownWorkbookHandlerExecutionChain = new WorkbookHandlerExecutionChain(
->                         (WorkbookWriteHandler)writeHandler);
