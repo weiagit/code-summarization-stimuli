@@ -1,4 +1,0 @@
-191c191
-< 							for (int i = 1; i <= numberMatcher.groupCount(); i++) {
----
-> 							for (int i; i <= numberMatcher.groupCount(); i++) {
