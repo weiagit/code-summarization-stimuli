@@ -1,7 +1,0 @@
-(1) **fillComment Method Summary:**
-
-The `fillComment` method adds a comment to an Excel cell using Apache POI. It checks if the `commentData` is not null, then determines the Excel file type to create an appropriate client anchor (`XSSFClientAnchor` for XLSX or `HSSFClientAnchor` for others). The method sets the position and size of the comment based on the provided coordinates. If the comment includes a rich text string, it is set using a helper method. An author can also be specified for the comment. Finally, the comment is attached to the targeted cell.
-
-(2) **Bug Identification:**
-
-no

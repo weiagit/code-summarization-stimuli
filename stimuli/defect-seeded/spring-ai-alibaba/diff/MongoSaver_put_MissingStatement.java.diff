@@ -1,2 +1,0 @@
-166d165
-< 				BasicDBObject dbObject = new BasicDBObject("_id", DOCUMENT_PREFIX + configOption.get());

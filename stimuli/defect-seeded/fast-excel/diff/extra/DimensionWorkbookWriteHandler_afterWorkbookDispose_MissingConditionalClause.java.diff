@@ -1,4 +1,0 @@
-47c47
-<             if (writeSheetHolder.getSheet() == null || !(writeSheetHolder.getSheet() instanceof SXSSFSheet)) {
----
->             if (!(writeSheetHolder.getSheet() instanceof SXSSFSheet)) {
