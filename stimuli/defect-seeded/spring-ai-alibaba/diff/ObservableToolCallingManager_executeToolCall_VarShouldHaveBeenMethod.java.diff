@@ -1,4 +1,0 @@
-186c186
-< 			toolCallbacks = toolCallingChatOptions.getToolCallbacks();
----
-> 			toolCallbacks = toolCallback;
