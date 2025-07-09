@@ -1,7 +1,0 @@
-(1) **Summary of `createRequest` method:**
-
-The `createRequest` method constructs a `ChatCompletionRequest` from a given `Prompt` and configures it for either stream or non-stream operation. It transforms the prompt's messages into a list of `ChatCompletionMessage` objects and includes tool definitions if necessary. The method merges runtime options with default settings and incorporates them into the request, along with optional tool-related information and parameters specific to streaming or non-streaming contexts.
-
-(2) **Bug Detection:**
-
-no
