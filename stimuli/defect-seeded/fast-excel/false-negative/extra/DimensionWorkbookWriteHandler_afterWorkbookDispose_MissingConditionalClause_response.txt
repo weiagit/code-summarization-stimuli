@@ -1,7 +1,0 @@
-(1) **Code Comment Summary for `afterWorkbookDispose`:**
-
-The `afterWorkbookDispose` method processes an SXSSFWorkbook after it is disposed. It iterates through initialized sheets, retrieves the underlying XSSFSheet using reflection, and adjusts the worksheet's dimension reference. It calculates the sheet's header size and last row index to accurately set the dimension using the CTWorksheet's setRef method.
-
-(2) **Bug Identification:**
-
-no
