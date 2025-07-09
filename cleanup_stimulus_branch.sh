@@ -14,7 +14,7 @@ for i in {1..34}; do
   # Remove each file/directory
   for f in "${files_to_remove[@]}"; do
     if [[ -e "$f" ]]; then
-      git rm -f "$f"
+      git rm -rf "$f"
     fi
   done
 
