@@ -1,7 +1,0 @@
-(1) **Code Comment Summary for `initBody` Method:**
-
-The `initBody` method configures the request body of an HTTP request based on the specified `HttpRequestNodeBody` type. It supports various body types including `NONE`, `RAW_TEXT`, `JSON`, `X_WWW_FORM_URLENCODED`, `FORM_DATA`, and `BINARY`. For each type, the method performs variable replacement using the given state and handles appropriate content-type headers. It also includes error handling for invalid body configurations and unsupported types.
-
-(2) **Bug Identification:**
-
-no
