@@ -1,4 +1,0 @@
-460c460
-< 		DashScopeChatOptions requestOptions = (DashScopeChatOptions) prompt.getOptions();
----
-> 		DashScopeChatOptions requestOptions;
