@@ -1,4 +1,0 @@
-126c126
-<                 for (int k = j + 1; k < headNameList.size(); k++) {
----
->                 for (int k; k < headNameList.size(); k++) {
