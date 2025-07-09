@@ -1,4 +1,0 @@
-191c191
-<         if (CollectionUtils.isEmpty(analysisCellList) || oneRowData == null) {
----
->         if (CollectionUtils.isEmpty(analysisCellList) && oneRowData == null) {
