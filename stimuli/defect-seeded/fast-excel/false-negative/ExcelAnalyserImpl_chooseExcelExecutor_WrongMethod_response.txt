@@ -1,4 +1,0 @@
-(1) The `chooseExcelExecutor` method determines the appropriate strategy for analyzing Excel files based on the file type (XLS, XLSX, CSV). It sets up the necessary processing context and executor by checking if a file or input stream is an encrypted XLS file (which may actually be XLSX), decrypting if needed, and initializing the respective read context and executor for XLS, XLSX, or CSV files.
-
-(2) 
-no
