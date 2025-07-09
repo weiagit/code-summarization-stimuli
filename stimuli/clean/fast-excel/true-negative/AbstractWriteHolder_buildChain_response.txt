@@ -1,7 +1,0 @@
-1. **Code Comment Summary for `buildChain` Method:**
-
-The `buildChain` method adds a given `WriteHandler` to the appropriate execution chain based on its type. It categorizes the handler as a `CellWriteHandler`, `RowWriteHandler`, `SheetWriteHandler`, or `WorkbookWriteHandler`. Depending on whether the `runOwn` flag is true, it either adds the handler to an "own" chain or the standard chain. If the handler is of a non-matching type, it simply appends it to the `writeHandlerList`.
-
-2. **Bug Identification:**
-
-no
