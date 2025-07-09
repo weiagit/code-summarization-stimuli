@@ -1,0 +1,4 @@
+292c292
+<         if (originCellStyle != null) {
+---
+>         if (cellStyle != null) {

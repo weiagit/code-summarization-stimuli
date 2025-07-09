@@ -1,0 +1,12 @@
+(1) **Summary of `fillComment` Method:**
+
+This method adds a comment to a cell in an Excel sheet. It first checks if `commentData` is null and returns if true. It determines the type of Excel file (XLSX or not) and creates a client anchor to position the comment. The anchor coordinates are calculated using the comment's positional data. A comment is then created using the sheet's drawing patriarch. The method sets the comment's text and author if available, and finally associates the comment with the cell.
+
+(2) **Bug Identification:**
+
+yes
+
+ConcurrentModificationException
+
+Explanation:
+In the `else` block of `fillComment`, a wrong assignment overwrites the `anchor` variable for the `HSSFClientAnchor`. This results in a `ConcurrentModificationException` since the same logic is repeated after an incorrect assignment. Only one logic branch should exist for each type of Excel file. The repeated block within the `else` statement is unnecessary and likely a copy-paste error.

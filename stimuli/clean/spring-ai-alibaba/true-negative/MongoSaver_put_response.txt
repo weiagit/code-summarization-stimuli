@@ -1,0 +1,21 @@
+1. **Code Comment Summary for the `put` Method in `MongoSaver`:**
+
+```java
+/**
+ * Saves or updates a checkpoint associated with the given `RunnableConfig` in a MongoDB collection.
+ * Begins a transaction to either replace an existing checkpoint or insert a new one if it doesn't exist.
+ * Utilizes a LinkedList to manage checkpoint ordering. Validates checkpoint ID presence and consistency.
+ * If the specified checkpoint ID exists, it replaces the checkpoint in the list; otherwise, it pushes a new checkpoint.
+ * Commits the transaction upon successful operation or aborts if an error occurs.
+ * Throws an `IllegalArgumentException` if the thread ID from `RunnableConfig` is not present.
+ * Finally, builds and returns an updated `RunnableConfig` with the checkpoint ID.
+ */
+```
+
+2. **Bug Identification:**
+
+```
+no
+```
+
+- The `put` method appears to handle session initiation, transactions, and exception handling correctly. No bug was identified in the method logic.

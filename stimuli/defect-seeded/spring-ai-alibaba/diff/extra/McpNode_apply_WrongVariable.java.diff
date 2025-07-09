@@ -1,0 +1,4 @@
+94c94
+< 					finalParams.put(key, value);
+---
+> 					finalParams.put(key, result);

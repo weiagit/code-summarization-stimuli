@@ -1,0 +1,4 @@
+203c203
+< 				var subGraph = subGraphNode.subGraph();
+---
+> 				String subGraph = subGraphNode.subGraph();

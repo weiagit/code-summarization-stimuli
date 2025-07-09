@@ -1,0 +1,9 @@
+```java
+/**
+ * Updates the dimensions of sheets in a SXSSFWorkbook after workbook disposal. 
+ * Checks for null and type correctness. Retrieves internal XSSFSheet from SXSSFSheet 
+ * and adjusts the worksheet dimensions based on the head map size and last row index.
+ */
+```
+
+No

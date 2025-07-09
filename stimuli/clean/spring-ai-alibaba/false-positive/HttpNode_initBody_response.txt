@@ -1,0 +1,12 @@
+```java
+(1) The `initBody` method initializes the HTTP request body based on the type specified in the `HttpRequestNodeBody`. It supports various body types such as RAW_TEXT, JSON, FORM_DATA, X_WWW_FORM_URLENCODED, and BINARY. The method sets the appropriate content type header and body content for each type, including replacing template variables with values from the `state`.
+
+(2) Yes  
+Runtime Exception  
+
+In the `initBody` method, for the `BINARY` body type, the line:
+```java
+mediaType = StringUtils.hasText(fileItem.getMimeType()) ? MediaType.parseMediaType(fileItem.getMimeType()) : MediaType.APPLICATION_OCTET_STREAM;
+```
+may throw a runtime exception if `fileItem.getMimeType()` is invalid or null when parsed by `MediaType.parseMediaType()`. To fix this, ensure a valid MIME type or handle the exception.
+```

@@ -1,0 +1,4 @@
+776c776
+< 		String pipelineId = upsertPipelineResponse.getBody().id;
+---
+> 		String pipelineId;

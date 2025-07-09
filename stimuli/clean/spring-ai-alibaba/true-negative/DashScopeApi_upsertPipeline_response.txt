@@ -1,0 +1,19 @@
+(1) **Code Comment Summary for upsertPipeline Method:**
+
+```java
+/**
+ * Inserts or updates a data pipeline with specified configuration options.
+ *
+ * - Constructs an `UpsertPipelineRequest` using provided documents and store options.
+ * - Embedding, parser, and retriever configurations are initialized with default or 
+ *   user-provided options.
+ * - Sends a PUT request to upsert the pipeline via the REST client.
+ * - Handles success or throws a `DashScopeException` with a specific error code if 
+ *   the response is unsuccessful.
+ * - Starts the pipeline ingestion process once the pipeline is upserted.
+ */
+```
+
+(2) **Identify if any method contains a bug:**
+
+no

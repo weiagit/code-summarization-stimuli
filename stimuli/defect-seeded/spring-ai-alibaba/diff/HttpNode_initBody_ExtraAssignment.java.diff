@@ -1,0 +1,2 @@
+204a205
+> 						jsonObject = new ObjectMapper().readValue(jsonTemplate, Object.class);

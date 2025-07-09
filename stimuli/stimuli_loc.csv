@@ -1,0 +1,18 @@
+file_path,method_loc,file_loc
+stimuli/clean/fast-excel stimuli/clean/fast-excel/AbstractExcelWriteExecutor_fillComment.java,47,343
+stimuli/clean/fast-excel/AbstractWriteHolder_buildChain.java,54,527
+stimuli/clean/fast-excel/DimensionWorkbookWriteHandler_afterWorkbookDispose.java,47,81
+stimuli/clean/fast-excel/ExcelAnalyserImpl_chooseExcelExecutor.java,44,299
+stimuli/clean/fast-excel/ExcelWriteFillExecutor_doFill.java,111,630
+stimuli/clean/fast-excel/ExcelWriteHeadProperty_headCellRangeList.java,48,148
+stimuli/clean/fast-excel/WriteWorkbookHolder_createCellStyle.java,49,385
+stimuli/clean/fast-excel/ModelBuildEventListener_buildUserModel.java,55,174
+stimuli/clean/fast-excel/ExcelAnalyserImpl_finish_71.java,71,299
+stimuli/clean/spring-ai-alibaba/DashScopeApi_upsertPipeline.java,62,1591
+stimuli/clean/spring-ai-alibaba/DashScopeChatModel_createRequest.java,58,543
+stimuli/clean/spring-ai-alibaba/DiagramGenerator_generatePublic.java,77,306
+stimuli/clean/spring-ai-alibaba/HttpNode_initBody.java,79,575
+stimuli/clean/spring-ai-alibaba/McpNode_apply.java,71,238
+stimuli/clean/spring-ai-alibaba/MongoSaver_put.java,62,248
+stimuli/clean/spring-ai-alibaba/ObservableToolCallingManager_executeToolCall.java,61,330
+stimuli/clean/spring-ai-alibaba/DashScopeDocumentRetrievalAdvisor_after.java,50,208

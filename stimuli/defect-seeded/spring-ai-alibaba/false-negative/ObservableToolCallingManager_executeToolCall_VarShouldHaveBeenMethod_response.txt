@@ -1,0 +1,15 @@
+(1) **Code Comment Summary for the Method `executeToolCall`:**
+
+```java
+/**
+ * Executes a tool call based on the provided prompt, assistant message, and tool context.
+ * Iterates through tool calls within the assistant message, resolves each tool callback,
+ * and performs the call using the provided input arguments. Observes the execution process
+ * and handles any exceptions that occur. The method compiles the tool responses and determines
+ * if a direct return is required based on tool metadata. Returns an internal result containing
+ * the tool response message and a flag indicating if a direct return is necessary.
+ */
+```
+
+(2) 
+no

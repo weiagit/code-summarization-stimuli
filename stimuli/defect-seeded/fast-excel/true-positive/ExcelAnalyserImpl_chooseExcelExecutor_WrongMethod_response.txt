@@ -1,0 +1,8 @@
+(1) **Summary for `chooseExcelExecutor` Method:**
+
+`chooseExcelExecutor` selects the appropriate strategy to read an Excel file based on its type (XLS, XLSX, CSV). It configures the processing context and executor by determining the Excel format and accounting for encrypted files. For XLS files, it checks for encryption and decrypts if necessary; for XLSX and CSV, it sets up the respective context and executor directly.
+
+(2) yes  
+Resource leak
+
+- The method `chooseExcelExecutor` has a potential bug where the `close()` method is not called on `POIFSFileSystem` if it is not an encrypted XLS file. It should be closed to prevent a resource leak. Adding `poifsFileSystem.close()` after its usage would resolve this.

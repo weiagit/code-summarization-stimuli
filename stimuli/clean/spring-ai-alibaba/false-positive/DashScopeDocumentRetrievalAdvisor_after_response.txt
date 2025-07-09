@@ -1,0 +1,5 @@
+(1) **Method `after`:** This method processes the `ChatClientResponse` after the main operation is complete. It checks if the response contains a `ChatResponse` and copies it to a new builder. If references are enabled, it examines the `finishReason`. If it's `NULL`, it appends the response text to a cumulative context entry. Otherwise, it attempts to extract references from the response content to identify and collect the referenced documents.
+
+(2) yes
+
+The method contains a **bug** related to improperly referencing and retrieving documents. Specifically, when extracting document indices for references, the code doesn't prepend brackets (e.g., `[%s]`) when accessing the `documentMap.` This could lead to failed lookups during document retrieval due to mismatched keys. Additionally, `finishReason` checking and `context` updates lack precision, which can affect functionality when handling non-`NULL` reasons.

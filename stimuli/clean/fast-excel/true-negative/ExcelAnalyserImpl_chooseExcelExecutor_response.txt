@@ -1,0 +1,22 @@
+1. **Code Comment Summary for `chooseExcelExecutor`:**
+
+```java
+/**
+ * Selects the appropriate execution strategy for reading an Excel file based on its type.
+ * Handles files of types XLS, XLSX, and CSV, including encrypted XLS that might be XLSX.
+ * 
+ * Steps:
+ * - Determines the file type using `ExcelTypeEnum`.
+ * - For XLS files, sets up POIFSFileSystem, decrypts if necessary, and selects the appropriate context and executor.
+ * - For XLSX, directly sets the context and executor.
+ * - For CSV, assigns corresponding context and executor.
+ * - Ensures proper resource management by closing streams and handling exceptions.
+ *
+ * @param readWorkbook The workbook to be analyzed. Must contain necessary read information.
+ * @throws Exception if an error occurs while reading the Excel file.
+ */
+```
+
+2. **Bug Identification:**
+
+no

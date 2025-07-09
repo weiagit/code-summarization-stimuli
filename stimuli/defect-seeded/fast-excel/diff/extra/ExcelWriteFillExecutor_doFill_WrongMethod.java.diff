@@ -1,0 +1,4 @@
+255c255
+<                     cellWriteHandlerContext.setOriginalFieldClass(FieldUtils.getFieldClass(dataMap, variable, value));
+---
+>                     cellWriteHandlerContext.setOriginalFieldClass(FieldUtils.fill(dataMap, variable, value));

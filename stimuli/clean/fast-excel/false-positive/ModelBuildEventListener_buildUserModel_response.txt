@@ -1,0 +1,10 @@
+1. **Code Comment Summary for `buildUserModel` Method:**
+
+   The `buildUserModel` method constructs and returns an instance of the user-defined model by populating its fields based on the provided cell data and metadata. It retrieves the model class type from `ExcelReadHeadProperty` and uses reflection to instantiate it. The method then iterates over the header map, retrieves corresponding field names, and converts cell data into Java objects using the field information and a converter map. It populates the BeanMap with these field-value pairs and ensures that field values are assigned, even if the entity class has non-standard setters. If any exception occurs during instantiation, an `ExcelDataConvertException` is thrown with relevant details.
+
+2. **Bug Identification:**
+
+   yes  
+   Reflective Instantiation
+
+The bug in the `buildUserModel` method is the use of `newInstance()` which is deprecated. This approach can lead to various issues such as failing to instantiate if a constructor isn’t accessible. The correct approach is to use `getDeclaredConstructor().newInstance()`.

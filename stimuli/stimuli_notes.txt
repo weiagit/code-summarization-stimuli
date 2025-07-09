@@ -1,0 +1,25 @@
+stimuli/clean/spring-ai-alibaba/DiagramGenerator_generatePublic.java,77,306, NOTE: this one has two methods with the same name! Both are called generate (public and protected)
+
+
+
+# Note: current total is 17 programs * 4 ChatGPT responses (TN FP for buggy; TP FN for clean)
+# Line counts:
+# File - lines of code: 81 lines to 1591 lines. Average 407 lines
+# Method to summarize - lines of code: 44 lines to 111 lines. Average 61 lines
+
+
+
+# Defects: 12 different bugs
+
+ExtraAssignment: 3
+ExtraStatement: 2
+WrongMethod: 1
+OrToAnd: 2
+UninitializedVariable: 3
+WrongVarible: 1
+WrongConditional: 1
+WrongMethod: 1
+WrongType: 1
+ExtraConditional: 1
+MissingStatement: 1
+VariableShouldHaveBeenMethod: 1

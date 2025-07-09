@@ -1,0 +1,20 @@
+Certainly! Let's address your requests:
+
+### (1) Code Comment Summary for the Method `upsertPipeline`
+
+```java
+/**
+ * Updates or inserts a data pipeline configuration based on given documents and store options.
+ * It sets up transformation components including embedding, parser, and retriever configurations.
+ * It sends a PUT request to upsert the pipeline and a POST request to initiate document ingestion
+ * into the managed pipeline. Throws DashScopeException if there are errors in pipeline creation
+ * or document ingestion.
+ *
+ * @param documents List of documents to be included in the pipeline.
+ * @param storeOptions Configuration options for storing and retrieving documents.
+ */
+```
+
+### (2) Bug Identification
+
+no

@@ -1,0 +1,4 @@
+239c239
+< 		else if (edgeStart.target().id() != null) {
+---
+> 		else if (!edgeStart.target().id() != null) {

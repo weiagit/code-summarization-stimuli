@@ -1,0 +1,16 @@
+```java
+/**
+ * Constructs a user-defined model object based on the provided cell data.
+ * Uses reflection to instantiate the model and map cell values to the model's fields.
+ * Handles exceptions related to data conversion and instantiation failures.
+ * Supports mapping fields even if setter methods are non-standard.
+ *
+ * @param cellDataMap A map representing column index to cell data.
+ * @param readSheetHolder Object holding sheet-level metadata and configurations.
+ * @param context Current context of analysis, carrying execution state.
+ * @return The constructed and populated user model object.
+ * @throws ExcelDataConvertException if instantiation fails.
+ */
+```
+
+no

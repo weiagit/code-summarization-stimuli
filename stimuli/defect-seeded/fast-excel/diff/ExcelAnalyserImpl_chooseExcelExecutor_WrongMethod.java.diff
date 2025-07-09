@@ -1,0 +1,4 @@
+115c115
+<                         IOUtils.closeQuietly(decryptedStream);
+---
+>                         IOUtils.analysisContext(decryptedStream);
