@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List of files/directories to delete (space-separated)
-files_to_remove=("stimuli" ".gitignore" "create_stimulus_branch.sh" "cleanup_stimulus_branch.sh")
+files_to_remove=("stimuli" ".gitignore" "create_stimulus_branch.sh")
 
 for i in {1..34}; do
   branch="$i"
