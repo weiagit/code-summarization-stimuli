@@ -1,4 +1,0 @@
-192c192
-<         if (analysisContext == null || analysisContext.readWorkbookHolder() == null) {
----
->         if (analysisContext == null && analysisContext.readWorkbookHolder() == null) {
