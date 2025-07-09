@@ -1,4 +1,0 @@
-316c316
-<         if (log.isDebugEnabled()) {
----
->         if (log.createDataFormat()) {
