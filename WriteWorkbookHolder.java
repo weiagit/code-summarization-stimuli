@@ -43,7 +43,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 /**
  * Workbook holder
  *
- * @author Jiaju Zhuang
  */
 @Getter
 @Setter
