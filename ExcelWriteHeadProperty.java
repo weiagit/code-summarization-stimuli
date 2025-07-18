@@ -33,7 +33,6 @@ import lombok.Setter;
 /**
  * Define the header attribute of excel
  *
- * @author jipengfei
  */
 @Getter
 @Setter
