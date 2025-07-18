@@ -49,7 +49,6 @@ import java.util.List;
  *     <li>Closing and cleaning up resources such as streams, caches, and temporary files.</li>
  * </ul>
  *
- * @author jipengfei
  */
 public class ExcelAnalyserImpl implements ExcelAnalyser {
     private static final Logger LOGGER = LoggerFactory.getLogger(ExcelAnalyserImpl.class);
@@ -221,7 +220,6 @@ public class ExcelAnalyserImpl implements ExcelAnalyser {
         }
 
         // close csv.
-        // https://github.com/fast-excel/fastexcel/issues/2309
         try {
             if ((readWorkbookHolder instanceof CsvReadWorkbookHolder)
                 && ((CsvReadWorkbookHolder) readWorkbookHolder).getCsvParser() != null
