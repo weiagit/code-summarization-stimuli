@@ -46,7 +46,6 @@ import org.apache.poi.ss.usermodel.Sheet;
 /**
  * Fill the data into excel
  *
- * @author Jiaju Zhuang
  */
 public class ExcelWriteFillExecutor extends AbstractExcelWriteExecutor {
 
@@ -428,7 +427,6 @@ public class ExcelWriteFillExecutor extends AbstractExcelWriteExecutor {
         if (!analysisCell.getFirstRow() || !WriteDirectionEnum.VERTICAL.equals(fillConfig.getDirection())) {
             return;
         }
-        // fix https://github.com/fast-excel/fastexcel/issues/1869
         if (isOriginalCell && PoiUtils.customHeight(row)) {
             collectionRowHeightCache.put(currentUniqueDataFlag, row.getHeight());
             return;
@@ -538,7 +536,6 @@ public class ExcelWriteFillExecutor extends AbstractExcelWriteExecutor {
             analysisCell.getVariableList().add(variable);
             if (lastPrepareDataIndex == prefixIndex) {
                 analysisCell.getPrepareDataList().add(StringUtils.EMPTY);
-                // fix https://github.com/fast-excel/fastexcel/issues/2035
                 if (lastPrepareDataIndex != 0) {
                     analysisCell.setOnlyOneVariable(Boolean.FALSE);
                 }
@@ -550,7 +547,6 @@ public class ExcelWriteFillExecutor extends AbstractExcelWriteExecutor {
             }
             lastPrepareDataIndex = suffixIndex + 1;
         }
-        // fix https://github.com/fast-excel/fastexcel/issues/1552
         // When read template, XLSX data may be in `is` labels, and set the time set in `v` label, lead to can't set
         // up successfully, so all data format to empty first.
         if (analysisCell != null && CollectionUtils.isNotEmpty(analysisCell.getVariableList())) {
