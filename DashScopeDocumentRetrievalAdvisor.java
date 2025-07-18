@@ -44,7 +44,6 @@ import org.springframework.util.StringUtils;
  * Title Document retrieval advisor.<br>
  * Description Document retrieval advisor.<br>
  *
- * @author yuanci.ytb
  * @since 2024/8/16 11:29
  */
 
