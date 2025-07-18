@@ -85,8 +85,6 @@ import static com.alibaba.cloud.ai.dashscope.common.DashScopeApiConstants.MESSAG
  * {@link ChatModel} implementation for {@literal Alibaba DashScope} backed by
  * {@link Generation}.
  *
- * @author yuluo
- * @author <a href="mailto:yuluo08290126@gmail.com">yuluo</a>
  * @see ChatModel
  */
 public class DashScopeChatModel implements ChatModel {
