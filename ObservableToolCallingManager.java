@@ -53,7 +53,6 @@ import org.springframework.util.StringUtils;
 /**
  * Inspired from org.springframework.ai.model.tool.DefaultToolCallingManager.
  *
- * @author Lumian
  */
 public class ObservableToolCallingManager implements ToolCallingManager {
 
