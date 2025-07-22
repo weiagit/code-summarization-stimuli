@@ -1,2 +1,0 @@
-198a199
-> 						chatResponseBuilder = ChatResponse.builder().from(response.chatResponse());
